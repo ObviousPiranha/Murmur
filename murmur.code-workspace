@@ -5,6 +5,15 @@
 		},
 		{
 			"path": "database"
+		},
+		{
+			"path": "Piranha.Murmur.Domain"
+		},
+		{
+			"path": "Piranha.Murmur.Repository.Postgres"
+		},
+		{
+			"path": "Piranha.Murmur.Repository"
 		}
 	],
 	"settings": {}
