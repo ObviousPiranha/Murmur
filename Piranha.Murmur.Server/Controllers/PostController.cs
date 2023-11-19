@@ -12,6 +12,7 @@ namespace Piranha.Murmur.Server.Controllers
         [HttpGet("{postId}")]
         public async Task<IActionResult> GetPostAsync(Guid postId, CancellationToken cancellationToken)
         {
+            cancellationToken.ThrowIfCancellationRequested();
             await Task.CompletedTask;
             return Ok(
                 new
