@@ -1,0 +1,17 @@
+services:
+  postgresql:
+    environment:
+      POSTGRES_DB: murmur
+      POSTGRES_PASSWORD: qwerQWER1234!@#$
+      POSTGRES_USER: murmur
+    image: postgres:16-alpine
+    volumes:
+    - ${PWD}/postgres/data:/var/lib/postgresql/data:rw
+  pgadmin:
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user@domain.com
+      PGADMIN_DEFAULT_PASSWORD: asdf
+    ports:
+      - "80:80"
+    image: dpage/pgadmin4
+
